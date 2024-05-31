@@ -56,6 +56,6 @@ This bot - game Buckshot Roulette in Telegram
 - [x] Start message
 - [x] The player shooting himself and Diller
 - [x] Diller shooting himself and the player
-- [ ] Stickers for good visuals
 - [x] 4 rounds like in the game
+- [ ] Stickers for good visuals
 - [ ] Auxiliary items, like in the game
