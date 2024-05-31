@@ -26,7 +26,7 @@ async def startGame(callback: types.CallbackQuery, state: FSMContext):
     await callback.answer("Game has been started")
     message = callback.message
 
-    blanks  = randint(1, 4)
+    blanks  = 1
     live    = randint(1, 4)
 
     await state.set_state(Game.inGame)
@@ -48,7 +48,7 @@ async def yourself(callback: types.CallbackQuery, state: FSMContext):
     data   = await state.get_data()
     blanks = data['blanks']
     live   = data['live']
-    if blanks != 0 and live != 0:
+    if blanks != 0 or live != 0:
         if blanks != 0:
             blanks_chanches = round(100 / ((live + blanks) / live))
         else:
@@ -74,11 +74,11 @@ async def yourself(callback: types.CallbackQuery, state: FSMContext):
 async def toDealer(callback: types.CallbackQuery, state: FSMContext):
     await callback.answer("You shooted the Dealer")
     message = callback.message
-
+    
     data   = await state.get_data()
     blanks = data['blanks']
     live   = data['live']
-    if blanks != 0 and live != 0:
+    if blanks != 0 or live != 0:
         if blanks != 0:
             blanks_chanches = round(100 / ((live + blanks) / live))
         else:
@@ -109,7 +109,7 @@ async def giveGun(callback: types.CallbackQuery, state: FSMContext):
     data   = await state.get_data()
     blanks = data['blanks']
     live   = data['live']
-    if blanks != 0 and live != 0:
+    if blanks != 0 or live != 0:
         if blanks != 0:
             blanks_chanches = round(100 / ((live + blanks) / live))
         else:
