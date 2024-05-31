@@ -18,6 +18,11 @@ class Markups():
         markup = InlineKeyboardBuilder().add(button).as_markup()
         return markup
     
+    async def newRound(first):
+        button = InlineKeyboardButton(text='New round', callback_data=f'newRound{first}')
+        markup = InlineKeyboardBuilder().add(button).as_markup()
+        return markup
+    
     async def giveGun():
         button = InlineKeyboardButton(text='Give the gun to the Dealer', callback_data='giveGun')
         markup = InlineKeyboardBuilder().add(button).as_markup()
