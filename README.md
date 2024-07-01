@@ -21,7 +21,7 @@
 > [!NOTE]
 > В будущем бот будет хоститься. Следите за новостями в [моем телеграм канале](https://t.me/mbutskch)
 
-## Что будет сделано и будет сделано в будущем?
+## Что уже сделано и будет сделано в будущем?
 - [x] Стартовое сообщение
 - [x] Стрельба игроком в себя и Диллера
 - [x] Стрельба Диллером в себя и игрока
@@ -52,7 +52,7 @@ This bot - game Buckshot Roulette in Telegram
 > [!NOTE]
 > In the future, the bot will be hosted. Follow the news on [my Telegram channel](https://t.me/mbutskch)
 
-## Что будет сделано и будет сделано в будущем?
+## TO-DO List
 - [x] Start message
 - [x] The player shooting himself and Diller
 - [x] Diller shooting himself and the player
